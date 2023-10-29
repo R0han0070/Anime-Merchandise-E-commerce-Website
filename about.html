@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="commonstyle.css">
+    <title>ABOUT US</title>
+    <style>
+    #mem{font-size: 40px;
+        padding: 100px 0px;
+     list-style: none;
+     display: flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     align-items: center;
+     justify-content: center;
+    }
+
+    p{
+        padding-right: 20px;
+    }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }</script>
+</head>
+<body>
+    <div class="header">
+        <div class="container1">
+          <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" width="225px">
+        </div>
+        <nav >
+          <ul>
+          <li ><a href="anime.php">Home</a></li>
+          <div class="dropdown">
+            <li onclick="myFunction()" class="dropbtn">Products</li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Apparel.php">Apparel</a>
+              <a href="Actionfigures.php">Action Figures</a>
+              <a href="accessories.php">Accessories</a>
+              <a href="Stationery.php">Stationery</a>
+              <a href="Posters.php">Posters</a>
+            </div>
+          </div>
+          <li ><a href="about.html">About</a></li>
+          <li ><a href="Contactus.html">Contact</a></li>
+          <li ><a href="signup1.php">Account</a></li>
+        </ul>
+        </nav>
+        <a href="cart.php"><img src="cart.png" width="30px" height="30px"></a>
+        </div>
+        </div>
+      </div>
+    
+    <div id="mem">
+        <p class="tpl"><img src="avgirl.png" alt="XOXO" height="300px" width="300px"><br> Manasi Mhatre <br>  CEC468  <br>
+        <p class="tpr"><img src="avboy.png" alt="XOXO"height="300px" width="300px"><br> Aryan Rajeev <br> CEC403 <br> </p>
+        <p class="btml"><img src="avboy.png" alt="XOXO" height="300px" width="300px"><br> Ganesh Mohan Pillai  <br>CEC467 </p> 
+        <p class="btmr"><img src="avboy.png" alt="XOXO" height="300px" width="300px"><br> Rohan Kadam  <br> CEC469<br></p>
+
+    </div>
+
+     <!--footer-->
+     <p>
+        <footer class="footer">
+          <div class="contains">
+              <div class="frow">
+                  <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="Apparel.php">Apparel</a></li>
+                        <li><a href="Stationery.php">Stationery</a></li>
+                        <li><a href="accessories.php">Accessories</a></li>
+                        <li><a href="Posters.php">Posters</a></li>
+                        <li><a href="Actionfigures.php">Actionfigures</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>T-shirts</li>
+                        <li>Notebooks</li>
+              <li>ect</li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Creators</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>Manasi Mhatre</li>
+                        <li>Rohan Kadam</li>
+                        <li>Ganesh Pillai</li>
+                        <li>Aryan Rajeev</li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="Contactus.html">Contact Us</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="mailto:animerch@gmail.com"><i class="fab fa-google"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </p>
+        </footer>
+</body>
+</html>

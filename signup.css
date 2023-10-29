@@ -1,0 +1,66 @@
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 3;
+
+}
+.header{
+	background:radial-gradient(#fff,#004f97);
+}
+
+.header .row{
+	margin-top: 70px;
+} 
+
+.container2{
+	 background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('sibg.jpg');
+	 height: 100vh;
+    background-size:cover;
+    background-position:center;
+    padding-top: 20px;
+
+}
+.sign-up-form{
+	width:300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background:#fff;
+	padding:20px;
+	margin: 1% auto 0;
+	text-align: center;
+}
+.sign-up-form h1{
+	color: steelblue;
+	margin-bottom: 30px;
+}
+.input-box{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	width:100%;
+	border: 1px solid #999;
+	outline: none;
+}
+button{
+	color: #fff;
+	width: 50%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border:none;
+}
+.sign-btn{
+	background-color: steelblue;
+}
+hr{
+	margin-top: 20px;
+	width: 80%;
+
+}
+.or{
+	background:#fff;
+	width: 30px;
+	margin: -12px auto 10px;
+	align-content: center;
+}

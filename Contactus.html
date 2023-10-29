@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <script>
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    <style>
+        #contact{
+            text-align: left;
+            font-size: 20px;
+        }
+
+        #contact img{
+          float: right;
+        }
+
+        p{
+            padding-top: 20px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+      .mapping{
+        height: 500px;
+        width: 100%;
+      }
+        #map{ 
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+        }
+
+        a{
+         padding: 0;
+         color: black;
+         font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a:hover{
+         text-decoration: underline;
+         color: black;
+         border-radius: 15px;
+         background-color: white;
+        }
+
+        
+    </style>
+      <link rel="stylesheet" type="text/css" href="commonstyle.css">
+      <link rel="stylesheet" type="text/css" href="product_style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container1">
+      <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" width="225px">
+    </div>
+    <nav >
+      <ul>
+      <li ><a href="anime.php">Home</a></li>
+      <div class="dropdown">
+        <li onclick="myFunction()" class="dropbtn">Products</li>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Apparel.php">Apparel</a>
+          <a href="Actionfigures.php">Action Figures</a>
+          <a href="accessories.php">Accessories</a>
+          <a href="Stationery.php">Stationery</a>
+          <a href="Posters.php">Posters</a>
+        </div>
+      </div>
+      <li ><a href="about.html">About</a></li>
+      <li ><a href="Contactus.html">Contact</a></li>
+      <li ><a href="signup1.php">Account</a></li>
+    </ul>
+    </nav>
+    <a href="cart.php"><img src="cart.png" width="30px" height="30px"></a>
+    </div>
+    </div>
+  </div>
+<!--Bo-->
+<center><h1><b> Contact Us</b></h1></center>
+    <p id="contact">
+      <img src="contact.webp" alt="Error" height="100px" width="300px">
+        Get in touch with us via<br>
+        Phone: 1615157482<br>
+        Email: animemerch@gmail.com <br>
+        We would appreciate your feedback! Visit this <a href="#"> link </a> to post your feed back now
+    </p>
+
+    <p>
+      Nobody Home? You can ship your delivery to one of our outlets and collect them whenever it suits you or
+      you could also visit one of our stores in the following locations to get in touch with our staff directly to resolve any inconvenience <br>
+    </p>
+
+    <div class="mapping">
+    <div id="map"></div>
+        <script>
+        var map= L.map('map').setView([19.03446683144639, 73.07491099718098],13);
+
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=UfooFaH0ksF6tdyJp7ie',
+        { attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+
+        }).addTo(map);
+        var marker= L.marker([19.022279975698382, 73.01871007485624]).addTo(map);
+        marker.bindPopup("Grand Central, Seawoods");
+
+        var marker= L.marker([19.0658, 73.0009]).addTo(map);
+        marker.bindPopup("Inorbit Mall, Vashi");
+
+        var marker= L.marker([18.9930, 73.1159]).addTo(map);
+        marker.bindPopup("Orion Mall, Panvel");
+
+        var marker= L.marker([19.0307, 73.0664]).addTo(map);
+        marker.bindPopup("Little World Mall, Kharghar");
+        </script>
+    </div> <br>
+    
+    <!--footer-->
+    <p>
+    <footer class="footer">
+	  <div class="contains">
+		  <div class="frow">
+			  <div class="footer-col">
+				<h4>Categories</h4>
+				<ul>
+					<li><a href="Apparel.php">Apparel</a></li>
+					<li><a href="Stationery.php">Stationery</a></li>
+					<li><a href="accessories.php">Accessories</a></li>
+					<li><a href="Posters.php">Posters</a></li>
+					<li><a href="Actionfigures.php">Actionfigures</a></li>
+				</ul>
+			  </div>
+			  <div class="footer-col">
+				<h4>Products</h4>
+				<ul>
+					<li>T-shirts</li>
+					<li>Notebooks</li>
+          <li>ect</li>
+				</ul>
+			  </div>
+			  <div class="footer-col">
+				<h4>Creators</h4>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li>Manasi Mhatre</li>
+					<li>Rohan Kadam</li>
+					<li>Ganesh Pillai</li>
+					<li>Aryan Rajeev</li>
+				</ul>
+			  </div>
+			  <div class="footer-col">
+				<h4>Contact</h4>
+				<ul>
+					<li><a href="Contactus.html">Contact Us</a></li>
+				</ul>
+				<div class="social-links">
+					<a href="mailto:animerch@gmail.com"><i class="fab fa-google"></i></a>
+				</div>
+			  </div>
+		    </div>
+	      </div>
+      </p>
+    </footer>
+    <!--footer end-->
+</body>
+</html>
